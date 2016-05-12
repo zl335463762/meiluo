@@ -1,0 +1,6 @@
+framework module DWTagList {
+  umbrella header "DWTagList-umbrella.h"
+
+  export *
+  module * { export * }
+}

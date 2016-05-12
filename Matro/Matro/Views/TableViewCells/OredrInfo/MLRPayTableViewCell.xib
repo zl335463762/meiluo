@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="MLRPayTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实付款：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lT-17-1VY">
+                        <rect key="frame" x="161" y="0.0" width="60" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Gvs-2a-DgB"/>
+                            <constraint firstAttribute="width" constant="42" id="XDl-9s-edl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XDl-9s-edl"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥12856.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bje-i9-seb">
+                        <rect key="frame" x="233" y="0.0" width="75" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.68235294117647061" green="0.55686274509803924" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="9lT-17-1VY" secondAttribute="bottom" id="Gsm-8F-jH3"/>
+                    <constraint firstAttribute="trailing" secondItem="Bje-i9-seb" secondAttribute="trailing" constant="12" id="R7d-g3-r2k"/>
+                    <constraint firstAttribute="bottom" secondItem="Bje-i9-seb" secondAttribute="bottom" id="Tvi-cG-uea"/>
+                    <constraint firstItem="Bje-i9-seb" firstAttribute="leading" secondItem="9lT-17-1VY" secondAttribute="trailing" constant="12" id="VwI-7n-2FD"/>
+                    <constraint firstItem="9lT-17-1VY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="hww-6e-Dir"/>
+                    <constraint firstItem="Bje-i9-seb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lUn-NJ-jAa"/>
+                    <constraint firstItem="9lT-17-1VY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="myz-5f-ihX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="rpayLabel" destination="Bje-i9-seb" id="zqR-kV-6Z5"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

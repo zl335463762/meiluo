@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="183" id="KGk-i7-Jjw" customClass="MLClassTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="183"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="182"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bcS-o6-t8G">
+                        <rect key="frame" x="5" y="0.0" width="398" height="182"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="172" id="pRW-BF-QzY"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XJ0-Zm-DJQ">
+                            <size key="itemSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pRW-BF-QzY"/>
+                            </mask>
+                        </variation>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="bcS-o6-t8G" secondAttribute="bottom" id="PLv-3L-6kp"/>
+                    <constraint firstAttribute="bottom" secondItem="bcS-o6-t8G" secondAttribute="bottom" id="Sto-Qc-pFk"/>
+                    <constraint firstItem="bcS-o6-t8G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="VCB-Hz-mqn"/>
+                    <constraint firstAttribute="trailing" secondItem="bcS-o6-t8G" secondAttribute="trailing" id="o93-M9-lmg"/>
+                    <constraint firstItem="bcS-o6-t8G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="t5b-ra-TRL"/>
+                    <constraint firstItem="bcS-o6-t8G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="usg-bk-ho8"/>
+                    <constraint firstAttribute="trailing" secondItem="bcS-o6-t8G" secondAttribute="trailing" id="vCb-mA-EEb"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="PLv-3L-6kp"/>
+                        <exclude reference="usg-bk-ho8"/>
+                        <exclude reference="vCb-mA-EEb"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="CH" destination="pRW-BF-QzY" id="i1f-ss-kfZ"/>
+                <outlet property="collectionView" destination="bcS-o6-t8G" id="N4S-R7-owV"/>
+            </connections>
+            <point key="canvasLocation" x="381.5" y="403.5"/>
+        </tableViewCell>
+    </objects>
+</document>

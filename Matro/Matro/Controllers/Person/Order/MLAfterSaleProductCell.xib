@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MLAfterSaleProductCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageloading" translatesAutoresizingMaskIntoConstraints="NO" id="wzL-gT-uVU">
+                        <rect key="frame" x="16" y="6" width="108" height="108"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="108" id="FJF-YW-pD4"/>
+                            <constraint firstAttribute="width" constant="108" id="Zyq-Di-oIS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="退货数：1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw2-eI-cCc">
+                        <rect key="frame" x="141" y="77" width="58" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥30500.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLU-n9-K0u">
+                        <rect key="frame" x="247" y="77" width="65" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HV2-NB-XhH">
+                        <rect key="frame" x="132" y="23" width="180" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="uED-g6-TB6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HV2-NB-XhH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="8bA-Xn-e9Y"/>
+                    <constraint firstItem="Zw2-eI-cCc" firstAttribute="leading" secondItem="wzL-gT-uVU" secondAttribute="trailing" constant="17" id="CZT-a1-qM2"/>
+                    <constraint firstItem="HV2-NB-XhH" firstAttribute="leading" secondItem="wzL-gT-uVU" secondAttribute="trailing" constant="8" id="FZk-hb-NwG"/>
+                    <constraint firstItem="wzL-gT-uVU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="LrY-Dw-2ua"/>
+                    <constraint firstItem="LLU-n9-K0u" firstAttribute="top" secondItem="HV2-NB-XhH" secondAttribute="bottom" constant="14" id="T2m-nk-ZcK"/>
+                    <constraint firstItem="LLU-n9-K0u" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="eQd-OE-37B"/>
+                    <constraint firstItem="wzL-gT-uVU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uwr-Cd-L8b"/>
+                    <constraint firstItem="HV2-NB-XhH" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="y9m-Ur-SSL"/>
+                    <constraint firstItem="LLU-n9-K0u" firstAttribute="centerY" secondItem="Zw2-eI-cCc" secondAttribute="centerY" id="yBH-6A-DjK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="502" y="323"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="imageloading" width="354" height="354"/>
+    </resources>
+</document>
